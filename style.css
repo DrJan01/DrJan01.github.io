@@ -1,0 +1,161 @@
+Body {
+    Font-family: Arial, sans-serif;
+    Margin: 0;
+    Padding: 0;
+  }
+  Header {
+    Background-color: #333;
+    Color: #fff;
+    Padding: 20px;
+    Text-align: center;
+  }
+  H1 {
+    Margin: 0;
+  }
+  Nav {
+    Background-color: #f4f4f4;
+    Padding: 10px;
+  }
+  Nav ul {
+    List-style-type: none;
+    Margin: 0;
+    Padding: 0;
+    Display: flex;
+    Justify-content: center;
+  }
+  Nav ul li {
+    Margin: 0 10px;
+  }
+  Nav ul li a {
+    Text-decoration: none;
+    Color: #333;
+    Font-weight: bold;
+  }
+  Section {
+    Padding: 20px;
+  }
+  Footer {
+    Background-color: #333;
+    Color: #fff;
+    Padding: 20px;
+    Text-align: center;
+  }
+footer{
+    background-color: black;
+    color: var(--second-c);
+  }
+  footer ul{
+    padding:0;
+  }
+  footer li{
+    list-style: none;
+  }
+  .wrap-footer{
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    color: white;
+    align-items: center;
+  }
+  .logo-element_footer{
+    display: flex;
+    margin: 2rem 0;
+  }
+  .logo-element_footer img{
+    max-height: 75px;
+  }
+  .element-footer h5{
+    margin: 1rem 0;
+  }
+  .text-element-footer li{
+    line-height: 2;
+  }
+  .link-elements-footer li a{
+    color:#FFC300;
+  }
+  .rrss-element-footer ul{
+    display: flex;
+    flex-flow: wrap;
+  }
+  .rrss-element-footer img{
+    width: 35px;
+  }
+  .rrss-element-footer li{
+    margin-right: 1rem;
+  }
+  .footer-creds{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: white;
+    font-size: .9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .legal-creds ul{
+    display: flex;
+    flex-flow: row;
+  }
+  .legal-creds ul li{
+    padding-right: 1rem;
+  }
+  .legal-creds ul a{
+    color: white;
+    font-size: .9rem;
+  }
+
+  /*Icono estilos*/
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: #48d425;
+    color: white;
+}
+.fa-youtube {
+  background: #ad1d18;
+  color: white;
+}
+.fa-twitter {
+  background: #f0e7e7;
+  color: rgb(24, 166, 209);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+  /*para quwe sea responsivo*/
+
+  @media (max-width:768px){
+    .wrap-footer{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (max-width:480px){
+    .wrap-footer{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  @media (max-width:320px){
+    .footer-creds{
+      flex-flow: column;
+    }
+  }
